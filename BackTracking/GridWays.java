@@ -24,12 +24,7 @@ public class GridWays {
          * return gridways(0, 0, m, n);
          * }
          * public int gridways(int i, int j, int m, int n) {
-         * // (Optional) Correct recursion version (very slow for big m,n)
-         * // if (i == m - 1 && j == n - 1) return 1;
-         * // if (i >= m || j >= n) return 0;
-         * // return gridways(i + 1, j, m, n) + gridways(i, j + 1, m, n);
-         * 
-         * // ✅ Permutation / Combination formula:
+         * //Permutation / Combination formula:
          * // total moves = (m-1) downs + (n-1) rights = N
          * // answer = C(N, r) where r = min(m-1, n-1)
          * int N = (m - 1) + (n - 1);
