@@ -1,7 +1,5 @@
 import java.util.Arrays;
-
 public class SpiralMatrixII {
-
     public static int[][] generateMatrix(int n) {
         int startRow = 0;
         int startCol = 0;
