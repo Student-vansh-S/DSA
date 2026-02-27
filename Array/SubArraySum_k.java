@@ -17,6 +17,6 @@ public class SubArraySum_k {
     public static void main(String[] args) {
         int[] arr={9,4,0,20,3,10,5};
         int k=33;
-        System.out.println("Count of sub array which is equals to "+k+" : "+subarraySum(arr, k));
+        System.out.println("SubArray sum equals to "+k+" : "+subarraySum(arr, k));
     }
 }

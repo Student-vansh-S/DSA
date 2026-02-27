@@ -96,7 +96,7 @@ public class Nqueens {
         }
     }
     public static void main(String[] args) {
-        int n=6;
+        int n=4;
         char board[][] = new char[n][n];
         if (n == 2 || n == 3) {
             System.out.println("No such positions of N queens is found in "+n+" * "+n);

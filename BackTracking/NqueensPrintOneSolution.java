@@ -63,5 +63,4 @@ public class NqueensPrintOneSolution {
             System.out.println("No such positions of N queens is found in "+n+" * "+n);
         }
     }
-    
 }

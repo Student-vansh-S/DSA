@@ -8,7 +8,6 @@ public class SortArrayOf012 {
                 int temp = nums[low];
                 nums[low] = nums[mid];
                 nums[mid] = temp;
-
                 low++;
                 mid++;
             } 

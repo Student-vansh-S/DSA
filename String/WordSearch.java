@@ -31,6 +31,6 @@ public class WordSearch {
                           {'S','F','C','S'},
                           {'A','D','E','E'}};
         String word = "ABCCED";
-        System.out.println(wordExist(board,word));
+        System.out.println("Word "+word+" :"+wordExist(board,word));
     }
 }

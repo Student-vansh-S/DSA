@@ -5,14 +5,14 @@ public class TilingProblem {
             return 1;
         }
         //Vertically Placed 
-        int vertically=tiling(n-1);
+        // int vertically=tiling(n-1);
 
-        //Horizontally Placed 
-        int horizontally=tiling(n-2);
+        // //Horizontally Placed 
+        // int horizontally=tiling(n-2);
 
-        return vertically+horizontally;
+        return tiling(n-1)+tiling(n-2);
     }
     public static void main(String[] args) {
-        System.out.println(tiling(5));
+        System.out.println("Ways :"+tiling(5));
     }
 }

@@ -22,8 +22,7 @@ public class BinaryStringProblem {
         }
     }
     public static void main(String[] args) {
-        printOneBS(3, 0, new String());
-        // printZeroBS(3, 1, new String());
+        // printOneBS(3, 0, new String());
+        printZeroBS(3, 1, new String());
     }
-    
 }

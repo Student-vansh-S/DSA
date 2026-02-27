@@ -106,7 +106,7 @@ public class RecursionQuestions {
         // System.out.println(sortedArray(arr, 0));
         // System.out.println(firstOIA(arr, 0, 45));
         // System.out.println(lastOIA(arr, 0, 13));
-        // System.out.println(power(2, 5));
+        // System.out.println(power(2, 5));++++++++
     }
     
 }
