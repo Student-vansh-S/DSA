@@ -139,10 +139,12 @@ public class LinkedListCycleII {
     }
     public static void main(String[] args) {
         LinkedListCycleII ll = new LinkedListCycleII();
-        ll.addFirst(3);
-        ll.addLast(2);
-        ll.addLast(0);
-        ll.addLast(-4);
-        ll.detectCycle(head);
+        head = new Node(3);
+        head.next = new Node(2);
+        head.next.next = new Node(0);
+        head.next.next.next = new Node(-4);
+        head.next.next.next.next=head;
+        Node result= ll.detectCycle(head);
+        System.out.println("Tail connects to node index "+result.val);
     }
 }
