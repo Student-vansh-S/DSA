@@ -93,7 +93,7 @@ public class RemoveNthNodeFromEndofList {
         return val;
     }
 
-    // Remove from Start
+    // Remove from last
     public int removeLast() {
         if (size == 0) {
             System.out.println("Linked List is Empty.");
@@ -113,11 +113,28 @@ public class RemoveNthNodeFromEndofList {
         temp.next = null; // remove last node
         tail = temp; // update tail
         size--;
-
         return val;
     }
 
     public  Node removeNthFromEnd(Node head, int n) {
+        // Approach 1
+        // if(n==size){
+        //     head = head.next; // remove first
+        //     return head;
+        // }
+
+        // // size-n
+        // int i=1;
+        // int itoFind = size - n;
+        // Node prev = head;
+        // while (i < itoFind) {
+        //     prev = prev.next;
+        //     i++;
+        // }
+        // prev.next= prev.next.next;
+        // return head;
+
+        // Approach 2
         Node temp = new Node(0);
         temp.next = head;
         Node fast = temp;
