@@ -1,7 +1,7 @@
 import java.util.Stack;
 
 public class ImplementQueueUsingStack {
-    class MyQueue {
+    static class MyQueue {
         Stack<Integer> s1;
         Stack<Integer> s2;
 
@@ -40,7 +40,7 @@ public class ImplementQueueUsingStack {
     }
 
     public static void main(String[] args) {
-        MyQueue queue = new ImplementQueueUsingStack().new MyQueue();
+        MyQueue queue = new MyQueue();
         queue.push(1);
         queue.push(2);
         System.out.println(queue.peek()); // returns 1
