@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class ImplementStackUsingQueue {
-    class MyStack {
+    static class MyStack {
         Queue<Integer> q1;
         Queue<Integer> q2;
 
@@ -67,7 +67,7 @@ public class ImplementStackUsingQueue {
     }
 
     public static void main(String[] args) {
-        MyStack stack = new ImplementStackUsingQueue().new MyStack();
+        MyStack stack = new MyStack();
         stack.push(1);
         stack.push(2);
         System.out.println(stack.top()); // returns 2
