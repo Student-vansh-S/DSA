@@ -1,0 +1,40 @@
+public class IncreasingOrderSearchTree {
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
+
+    TreeNode curr;
+
+    public TreeNode increasingBST(TreeNode root) {
+        TreeNode dummy = new TreeNode(-1);
+        curr = dummy;
+        inorder(root);
+        return dummy.right;
+    }
+
+    private void inorder(TreeNode node) {
+        if (node == null)
+            return;
+        inorder(node.left);
+        // process current node
+        node.left = null; // remove left
+        curr.right = node; // attach to right
+        curr = node; // move pointer
+        inorder(node.right);
+    }
+}
