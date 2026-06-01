@@ -1,7 +1,7 @@
 public class RotatingTheBox {
     public char[][] rotateTheBox(char[][] box) {
         int m = box.length;
-        int n = box[0].length;
+        int n = box[0].length;M
         // Step 1: apply gravity
         for (int i = 0; i < m; i++) {
             int empty = n - 1;

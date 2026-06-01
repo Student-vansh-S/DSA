@@ -1,13 +1,10 @@
 import java.util.Stack;
 
 public class DecodeString {
-
     public static String decodeString(String s) {
-
         Stack<Integer> numStack = new Stack<>();
         Stack<String> stringStack = new Stack<>();
         int k = 0;
-
         for (char c : s.toCharArray()) {
 
             if (Character.isDigit(c)) {
