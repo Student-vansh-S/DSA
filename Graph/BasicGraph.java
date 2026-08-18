@@ -25,9 +25,9 @@ public class BasicGraph {
 
         int vertex = 5;
         @SuppressWarnings("unchecked") // for warning removal
-        ArrayList<Edge>[] graph = (ArrayList<Edge>[]) new ArrayList[vertex]; // null -> empty arraylist
+        ArrayList<Edge> graph[] = (ArrayList<Edge>[]) new ArrayList[vertex]; 
         
-        for(int i=0;i<vertex;i++){
+        for(int i=0;i<vertex;i++){  // null -> empty arraylist
             graph[i] = new ArrayList<>();
         }
 
